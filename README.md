@@ -3,6 +3,5 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=sherifbea1_python-project-50&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=sherifbea1_python-project-50)
 [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=sherifbea1_python-project-50&metric=coverage)](https://sonarcloud.io/summary/new_code?id=sherifbea1_python-project-50)
 
-## Пример использования
-[![asciinema demo](https://asciinema.org/connect/a5d006f7-6b99-4fde-892a-47996b75a294)]
-
+## Пример использования:
+[![asciinema demo](https://asciinema.org/a/ywtqzJHLzXbwOuEPF9v8Apfl8)]
