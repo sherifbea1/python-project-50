@@ -1,8 +1,13 @@
 from gendiff.parsers import parse_file
 from gendiff.formatters.stylish import stylish
+from gendiff.formatters.plain import plain
+from gendiff.formatters.json_formatter import json_formatter
+
 
 FORMATTERS = {
     'stylish': stylish,
+    'plain': plain,
+    'json': json_formatter,
 }
 
 
