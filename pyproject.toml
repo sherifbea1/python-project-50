@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "gendiff"
+name = "hexlet-code"
 version = "0.1.0"
 description = "CLI tool for comparing configuration files"
 authors = ["Eugene Bell <sherifbea1@gmail.com>"]
