@@ -25,10 +25,10 @@ build-backend = "poetry.core.masonry.api"
 [tool.ruff]
 line-length = 88
 target-version = "py313"
-extend-select = ["E", "F", "W"]
 
 [tool.ruff.lint]
-extend-select = ["E203"]
+select = ["E", "F", "W"]
+ignore = ["E203"]
 
 [tool.pytest.ini_options]
 addopts = "-v --cov=gendiff --cov-report=xml"

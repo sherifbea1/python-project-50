@@ -2,8 +2,11 @@ from pathlib import Path
 import sys
 import os
 
-# Добавляем путь к папке src
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+
+sys.path.insert(
+    0,
+    os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')),
+)
 
 from gendiff.gendiff import generate_diff
 

@@ -32,8 +32,13 @@ def stylish(diff, depth=1):
         elif status == 'added':
             result.append(f"{sign_indent}+ {key}: {format_value(node['value'], depth)}")
         elif status == 'updated':
-            result.append(f"{sign_indent}- {key}: {format_value(node['old_value'], depth)}")
-            result.append(f"{sign_indent}+ {key}: {format_value(node['new_value'], depth)}")
+            result.append(
+                f"{sign_indent}- {key}: {format_value(node['old_value'], depth)}"
+            )
+            result.append(
+                f"{sign_indent}+ {key}: {format_value(node['new_value'], depth)}"
+            )
+
 
     result.append('    ' * (depth - 1) + '}')
     return '\n'.join(result)
