@@ -13,7 +13,7 @@ def test_generate_diff_json():
 
     diff_json = generate_diff(file1, file2, 'json')
 
-    
+
     parsed = json.loads(diff_json)
     assert isinstance(parsed, list)
     assert len(parsed) > 0
