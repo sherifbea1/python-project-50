@@ -21,7 +21,9 @@ def walk(diff, path=""):
             lines.extend(walk(node["children"], property_path + "."))
         elif status == "added":
             value = format_value(node["value"])
-            lines.append(f"Property '{property_path}' was added with value: {value}")
+            lines.append(
+            f"Property '{property_path}' was added with value: {value}"
+            )
         elif status == "removed":
             lines.append(f"Property '{property_path}' was removed")
         elif status == "updated":

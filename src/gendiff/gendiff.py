@@ -30,7 +30,12 @@ def build_diff(data1, data2):
                 'children': build_diff(data1[key], data2[key])
             })
         elif data1[key] == data2[key]:
-            diff.append({'key': key, 'status': 'unchanged', 'value': data1[key]})
+            diff.append({
+            'key': key,
+            'status': 'unchanged',
+            'value': data1[key],
+            })
+
         else:
             diff.append({
                 'key': key,
@@ -38,7 +43,6 @@ def build_diff(data1, data2):
                 'old_value': data1[key],
                 'new_value': data2[key]
             })
-
     return diff
 
 

@@ -25,20 +25,24 @@ def stylish(diff, depth=1):
         if status == 'nested':
             children = stylish(node['children'], depth + 1)
             result.append(f"{indent}{key}: {children}")
-        elif status == 'unchanged':
-            result.append(f"{indent}{key}: {format_value(node['value'], depth)}")
-        elif status == 'removed':
-            result.append(f"{sign_indent}- {key}: {format_value(node['value'], depth)}")
-        elif status == 'added':
-            result.append(f"{sign_indent}+ {key}: {format_value(node['value'], depth)}")
-        elif status == 'updated':
-            result.append(
-                f"{sign_indent}- {key}: {format_value(node['old_value'], depth)}"
-            )
-            result.append(
-                f"{sign_indent}+ {key}: {format_value(node['new_value'], depth)}"
-            )
 
+        elif status == 'unchanged':
+            value = format_value(node['value'], depth)
+            result.append(f"{indent}{key}: {value}")
+
+        elif status == 'removed':
+            value = format_value(node['value'], depth)
+            result.append(f"{sign_indent}- {key}: {value}")
+
+        elif status == 'added':
+            value = format_value(node['value'], depth)
+            result.append(f"{sign_indent}+ {key}: {value}")
+
+        elif status == 'updated':
+            old_value = format_value(node['old_value'], depth)
+            new_value = format_value(node['new_value'], depth)
+            result.append(f"{sign_indent}- {key}: {old_value}")
+            result.append(f"{sign_indent}+ {key}: {new_value}")
 
     result.append('    ' * (depth - 1) + '}')
     return '\n'.join(result)
