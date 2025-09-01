@@ -31,5 +31,6 @@ select = ["E", "F", "W"]
 ignore = ["E203"]
 
 [tool.pytest.ini_options]
-addopts = "-v --cov=gendiff --cov-report=xml"
+addopts = "-v --cov=src --cov-report=xml"
 testpaths = ["tests"]
+

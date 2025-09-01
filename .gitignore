@@ -46,3 +46,7 @@ htmlcov/
 # OS files
 .DS_Store
 Thumbs.db
+
+
+# pytest coverage report
+coverage.xml
