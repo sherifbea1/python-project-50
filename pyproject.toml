@@ -34,3 +34,5 @@ ignore = ["E203"]
 addopts = "-v --cov=src --cov-report=xml"
 testpaths = ["tests"]
 
+[tool.coverage.run]
+relative_files = true
