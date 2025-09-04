@@ -25,16 +25,16 @@
 ## Примеры работы
 
 ### Шаг 4. Сравнение плоских JSON
-[![asciinema demo step 4](https://asciinema.org/a/btnqXH5rDzu08lNQJktGAOA6Y.svg)](https://asciinema.org/a/btnqXH5rDzu08lNQJktGAOA6Y)
+[![asciinema demo step 4](https://asciinema.org/a/8AhRdwRYB0uPIS9dqaEEoa12o)]
 
 ### Шаг 6. Поддержка YAML
-[![asciinema demo step 6](https://asciinema.org/a/MfPVm3kDrMs88y0gk3HAg4OpQ.svg)](https://asciinema.org/a/MfPVm3kDrMs88y0gk3HAg4OpQ)
+[![asciinema demo step 6](https://asciinema.org/a/GSiQ1ww7T9pK7axLJ6vQt3LJQ)]
 
 ### Шаг 7. Рекурсивное сравнение
-[![asciinema demo step 7](https://asciinema.org/a/ecCcWFEWH6Nf0p1LNKzbqECvL.svg)](https://asciinema.org/a/ecCcWFEWH6Nf0p1LNKzbqECvL)
+[![asciinema demo step 7](https://asciinema.org/a/QUhMEot87SCeOtfZ1PmL1q9HZ)]
 
 ### Шаг 8. Вывод в формате plain
-[![asciinema demo step 8](https://asciinema.org/a/jmWQM0OVF4JdH5xhWGQYUX2IX.svg)](https://asciinema.org/a/jmWQM0OVF4JdH5xhWGQYUX2IX)
+[![asciinema demo step 8](https://asciinema.org/a/baY4ViV5iHjtTFgEYOqL2Lhl7)]
 
 ### Шаг 9. Вывод в формате JSON
-[![asciinema demo step 9](https://asciinema.org/a/7env5ZPABbWSpq4yaNVhbdI2A.svg)](https://asciinema.org/a/7env5ZPABbWSpq4yaNVhbdI2A)
+[![asciinema demo step 9](https://asciinema.org/a/N1KmTBDwOx03mCtQKlw9wv33Z)]
