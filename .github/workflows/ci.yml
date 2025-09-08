@@ -14,19 +14,17 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Poetry
-        run: |
-          curl -sSL https://install.python-poetry.org | python3 -
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
+      - name: Install uv
+        run: pip install uv
 
       - name: Install dependencies
-        run: poetry install
+        run: uv sync --dev
 
       - name: Lint
-        run: poetry run make lint
+        run: uv run make lint
 
       - name: Test with coverage
-        run: poetry run pytest --cov=src --cov-report=xml
+        run: uv run pytest --cov=src --cov-report=xml
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v4

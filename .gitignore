@@ -29,6 +29,7 @@ ENV/
 
 # Unit test / coverage reports
 .coverage
+coverage.xml
 htmlcov/
 .tox/
 .nox/
@@ -47,6 +48,8 @@ htmlcov/
 .DS_Store
 Thumbs.db
 
+# Logs
+*.log
 
-# pytest coverage report
-coverage.xml
+# uv lockfile
+uv.lock

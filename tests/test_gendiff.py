@@ -8,7 +8,7 @@ sys.path.insert(
     os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')),
 )
 
-from gendiff.gendiff import generate_diff
+from gendiff.core import generate_diff
 
 
 def get_fixture_path(filename):

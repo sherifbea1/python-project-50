@@ -1,6 +1,6 @@
 import json
 from pathlib import Path
-from gendiff.gendiff import generate_diff
+from gendiff.core import generate_diff
 
 
 def get_fixture_path(filename):
